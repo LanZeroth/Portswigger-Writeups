@@ -23,7 +23,7 @@ After sending the request, I received a response indicating success:
 {
   "status": "User deleted"
 }
-
+```
 
 This confirmed that the user account was successfully removed from the system.
 
