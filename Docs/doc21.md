@@ -33,6 +33,9 @@ If the response you get back doesn't change, it means the server accepted the ex
 ## Testing Further
 To fully understand how the server behaves, you’d need to try other parameters and combinations to see what happens. The goal is to find out if the server mishandles these extra parameters in a way that might expose a vulnerability or unintended behavior.
 
+![Invalid Params](LanZeroth/Portswigger-Writeups/Images/invalid-params.png)
+
+
 ## Others
 Injecting invalid parameters involves adding extra information to a URL to see how the server processes it. By encoding the & symbol (%26), you can introduce another parameter the server may not expect. After sending the request, check the response. If nothing changes, the parameter might be ignored. Further testing is needed to see how the server handles different combinations, which could reveal vulnerabilities.
   
