@@ -33,7 +33,7 @@ If the response you get back doesn't change, it means the server accepted the ex
 ## Testing Further
 To fully understand how the server behaves, you’d need to try other parameters and combinations to see what happens. The goal is to find out if the server mishandles these extra parameters in a way that might expose a vulnerability or unintended behavior.
 
-![Invalid Params](LanZeroth/Portswigger-Writeups/Images/invalid-params.png)
+![Invalid Params](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/invalid-params.png)
 
 
 ## Others
