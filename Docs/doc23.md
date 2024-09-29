@@ -4,8 +4,7 @@ To test if an application is vulnerable to **server-side parameter pollution**, 
 
 ## Example Query String
 
-
- For example, you could modify the query string to the following:
+For example, you could modify the query string to the following:
 GET /userSearch?name=peter%26name=carlos&back=/home
 
 This results in the following server-side request to the internal API:
