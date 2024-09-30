@@ -1,0 +1,45 @@
+This HTTP request shows details of a request made to a web security academy lab, which appears to be related to password reset functionality. Here's a breakdown of the key parts:
+
+Host:
+0a9c00e5036ed0b780da261100030003.web-security-academy.net
+This is the server receiving the request.
+
+Cookie:
+session=lbXzsdRlJe7pQfC2lusw7fwiXfJTMbzR
+This session cookie might be used for user identification and maintaining a session state.
+
+User-Agent:
+Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:130.0) Gecko/20100101 Firefox/130.0
+This specifies that the request was made using Firefox 130.0 on a Windows 10 machine.
+
+Accept:
+*/*
+The request can accept any content type as a response.
+
+Referer:
+https://0a9c00e5036ed0b780da261100030003.web-security-academy.net/forgot-password
+Indicates the page from which the request originated, which is the forgot-password page.
+
+Content-Type:
+x-www-form-urlencoded
+This indicates the format of the request body is URL-encoded form data (common in POST requests).
+
+Content-Length:
+73
+The length of the request body.
+
+Origin:
+https://0a9c00e5036ed0b780da261100030003.web-security-academy.net
+Specifies the origin of the request to prevent Cross-Site Request Forgery (CSRF).
+
+Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site:
+These headers are part of the Fetch metadata to improve security.
+
+Sec-Fetch-Dest: empty (no resource is fetched)
+Sec-Fetch-Mode: cors (Cross-Origin Resource Sharing is being used)
+Sec-Fetch-Site: same-origin (request originates from the same site).
+Te:
+trailers
+Indicates support for additional headers to be sent after the body of the message (rarely used).
+
+If you're testing password reset functionality or investigating the response behavior, you might need to check the payload sent in the request body and how the server handles the password reset mechanism.
