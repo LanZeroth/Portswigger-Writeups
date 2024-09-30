@@ -5,9 +5,9 @@ When testing how a server processes URLs, you may be able to modify parts of the
 ## Query String Basics
 
 A query string contains parameters in key-value pairs, typically formatted like `?key=value`. These parameters help the server process and respond to requests. For example:
-
+```http
 GET /userSearch?name=peter
-
+```
 
 Here, `name=peter` is the parameter being sent to the server.
 
