@@ -5,11 +5,13 @@ To test if an application is vulnerable to **server-side parameter pollution**, 
 ## Example Query String
 
 For example, you could modify the query string to the following:
+```http
 GET /userSearch?name=peter%26name=carlos&back=/home
-
+```
 This results in the following server-side request to the internal API:
+```http
 GET /users/search?name=peter&name=carlos&publicProfile=true
-
+```
   
 
 This sends two `name` parameters to the server: `name=peter` and `name=carlos`. The impact of this depends on how the server processes these duplicates, and this behavior varies based on the technology used.
