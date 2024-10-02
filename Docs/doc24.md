@@ -15,31 +15,31 @@ When testing for SSPP, we attempt to manipulate the URL path parameters to explo
 
 ### Example:
 The application allows you to edit user profiles based on the username, using this endpoint:
-
+```http
 GET /edit_profile.php?name=peter
-
+```
 
 Internally, the application may generate a server-side request like:
-
+```http
 GET /api/private/users/peter
-
+```
 
 
 ### Exploit Path Traversal:
 
 To test for SSPP, you can attempt a **path traversal attack** by submitting URL-encoded values. For instance, submitting `peter/../admin` encoded in the URL might look like this:
-
+```http
 GET /edit_profile.php?name=peter%2f..%2fadmin
-
+```
 
 This may result in the following server-side request:
 
 
 ### Possible Exploit:
 If the server-side API normalizes this path, it may resolve to:
-
+```http
 /api/private/users/admin
-
+```
 
 This would allow the attacker to access the profile or data of the user `admin` instead of `peter`.
 
