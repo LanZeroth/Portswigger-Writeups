@@ -30,7 +30,7 @@ POST /myaccount
 name=peter","access_level":"administrator
 ```
 Here, you added access_level="administrator". If the server does not properly validate this input, it might process the new parameter, resulting in the following server-side request:
-note here the added payload is
+
 
 
 ```json
@@ -47,6 +47,7 @@ If the server accepts the extra access_level parameter without checking, you cou
 *Input validation*: Ensure that only allowed parameters (like "name") are processed.
 *Sanitize inputs*: Remove any extra parameters before sending data to the server.
 
+** Note ** here the added payload is
 ```json
 ","access_level":"administrator
 ```
