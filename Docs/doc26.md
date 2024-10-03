@@ -47,7 +47,7 @@ If the server accepts the extra access_level parameter without checking, you cou
 *Input validation*: Ensure that only allowed parameters (like "name") are processed.
 *Sanitize inputs*: Remove any extra parameters before sending data to the server.
 
-** Note ** here the added payload is
+**Note** here the added payload is
 ```json
 ","access_level":"administrator
 ```
