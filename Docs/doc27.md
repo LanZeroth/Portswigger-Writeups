@@ -1,5 +1,5 @@
 
-# Server-Side Parameter Pollution (SSPP) in JSON Data
+# Server-Side Parameter Pollution (SSPP) in Structured JSON Data
 
 ## Scenario: Editing a User's Name
 
