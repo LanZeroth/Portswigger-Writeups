@@ -46,6 +46,7 @@
   - Encode special characters before adding to structured formats.
 
 ![Testing Structured JSON ](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/testing-structured3.png)
-![Testing Structured JSON ](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/testing-structured.png)
+
 ![Testing Structured JSON ](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/testing-structured2.png)
 
+![Testing Structured JSON ](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/testing-structured.png)
