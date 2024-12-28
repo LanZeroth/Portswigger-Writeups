@@ -1,0 +1,53 @@
+Lab Completed: CSRF - SameSite Lax Bypass via Method Override 🎯
+
+Just wrapped up another insightful lab on PortSwigger's Web Security Academy! This one tackled a CSRF vulnerability enabled by improperly implemented SameSite cookie restrictions and a method override flaw. Here's the breakdown of how I solved it:
+🕵️‍♂️ Identifying the Issue
+
+1️⃣ Examining the Change Email Function:
+
+    Observed that the POST /my-account/change-email request lacked any CSRF tokens, making it susceptible to CSRF attacks.
+    Checked the session cookies set during login and found they used the default SameSite Lax restrictions. This meant the browser would send session cookies with top-level navigations, even for cross-site requests.
+
+2️⃣ Testing HTTP Method Override:
+
+    Sent the original POST /my-account/change-email request to Burp Repeater.
+    Tried converting it to a GET request using Burp's "Change request method" option, but the server rejected it.
+    Added the _method=POST parameter to the query string of the GET request:
+
+    GET /my-account/change-email?email=foo%40web-security-academy.net&_method=POST HTTP/1.1
+
+    This bypassed the server's restrictions and successfully executed the email change.
+
+🎯 Crafting and Deploying the Exploit
+
+3️⃣ Building the Malicious Payload:
+
+    Created a payload on the exploit server to induce the victim's browser to send a forged request:
+
+    <script>
+        document.location = "https://YOUR-LAB-ID.web-security-academy.net/my-account/change-email?email=pwned@web-security-academy.net&_method=POST";
+    </script>
+
+4️⃣ Testing the Exploit:
+
+    Verified that the exploit worked by viewing it myself and confirming the email address change.
+
+5️⃣ Delivering the Exploit:
+
+    Updated the payload to use a victim-specific email address:
+
+    <script>
+        document.location = "https://YOUR-LAB-ID.web-security-academy.net/my-account/change-email?email=victim@web-security-academy.net&_method=POST";
+    </script>
+
+    Delivered the crafted exploit to the victim, successfully changing their email address and completing the lab.
+
+🔑 Key Lesson
+
+This lab highlights the dangers of relying solely on SameSite cookies for CSRF protection. Here are some takeaways:
+
+    SameSite cookies can mitigate CSRF but are not foolproof, especially when method override flaws exist.
+    CSRF tokens should be included in every state-changing request and must be unpredictable and validated server-side.
+    Additional defenses like Origin/Referer header validation and proper request method handling further reduce the risk of CSRF.
+
+Another step closer to mastering web security! 💪
