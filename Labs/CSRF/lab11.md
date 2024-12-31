@@ -65,7 +65,7 @@ The HTML payload I used included the following:
 
 ---
 
-![CSRF Exploit Demonstration](LanZeroth/Portswigger-Writeups/Images/csrf-lab11a.PNG) 
+![CSRF Exploit Demonstration](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/csrf-lab11a.PNG)
 ![CSRF Exploit Demonstration 2](LanZeroth/Portswigger-Writeups/Images/csrf-lab11b.PNG) 
 ![CSRF Exploit Demonstration 3](LanZeroth/Portswigger-Writeups/Images/csrf-lab11c.PNG) 
 
