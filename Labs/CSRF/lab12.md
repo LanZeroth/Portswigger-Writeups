@@ -35,7 +35,9 @@ Created the following CSRF PoC HTML file:
 ```
 ### 4. Overcame Browser Limitations
 Modern browsers strip the query string from the Referer header by default.
-Added a ```html Referrer-Policy: unsafe-url ``` header to ensure the full URL, including the query string, was sent.
+Added a ```html 
+Referrer-Policy: unsafe-url``` 
+header to ensure the full URL, including the query string, was sent.
 
 ### 5. Delivered the Exploit
 
