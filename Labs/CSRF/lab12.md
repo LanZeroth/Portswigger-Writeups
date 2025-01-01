@@ -34,27 +34,25 @@ Created the following CSRF PoC HTML file:
 </html>
 ```
 ### 4. Overcame Browser Limitations
-
-    Modern browsers strip the query string from the Referer header by default.
-    Added a Referrer-Policy: unsafe-url header to ensure the full URL, including the query string, was sent.
+Modern browsers strip the query string from the Referer header by default.
+Added a ```html Referrer-Policy: unsafe-url ``` header to ensure the full URL, including the query string, was sent.
 
 ### 5. Delivered the Exploit
 
-    Hosted the exploit on the exploit server.
-    Tested and verified that the CSRF exploit worked by bypassing the Referer-based validation and changing the target email address.
+Hosted the exploit on the exploit server.
+Tested and verified that the CSRF exploit worked by bypassing the Referer-based validation and changing the target email address.
 
 🔑 Takeaways
+ Header Validation Can Be Tricky
+ Don’t assume the Referer header will always be present or reliable.
+Relying solely on Referer validation is insufficient for CSRF protection.
 
-    Header Validation Can Be Tricky
-        Don’t assume the Referer header will always be present or reliable.
-        Relying solely on Referer validation is insufficient for CSRF protection.
+Browser Quirks Can Be Exploited
+Exploiters can use browser behaviors like query strings and Referrer policies to bypass defenses.
+Test all edge cases when validating requests.
 
-    Browser Quirks Can Be Exploited
-        Exploiters can use browser behaviors like query strings and Referrer policies to bypass defenses.
-        Test all edge cases when validating requests.
-
-    Use Stronger Defenses
-        Always combine Referer checks with other CSRF protection measures, such as CSRF tokens.
+Use Stronger Defenses
+Always combine Referer checks with other CSRF protection measures, such as CSRF tokens.
 
 This lab demonstrated how easily weak validation logic can be exploited using modern browser behaviors and minimal effort.
 
