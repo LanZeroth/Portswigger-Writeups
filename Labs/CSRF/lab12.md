@@ -32,7 +32,7 @@ Created the following CSRF PoC HTML file:
     </script>
   </body>
 </html>
-
+```
 ### 4. Overcame Browser Limitations
 
     Modern browsers strip the query string from the Referer header by default.
