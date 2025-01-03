@@ -67,8 +67,6 @@ Exploit a clickjacking vulnerability requiring multiple user clicks to perform u
 <iframe src="https://0a02000004d7a00f8069cb0300bd0002.web-security-academy.net/my-account"></iframe>
 ```
 
-
-
 ### **PortSwigger Lab PoC**
 
 ```html
