@@ -1,4 +1,4 @@
-# Portswigger-Writeups
+# Portswigger-Writeups for Documentation purposes
 
 Welcome to my repository for documenting my progress in completing PortSwigger Web Security Academy Labs. This repository includes step-by-step solutions, tips, and insights gained during my learning journey through the labs. It is intended to help me track my progress and share knowledge with others interested in web security.
 
