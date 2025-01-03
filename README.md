@@ -21,6 +21,8 @@ This repository contains detailed solutions for the following labs:
 ### Expert Level (Work in Progress)
 - [ ] Advanced Exploitation Techniques
 
+I plan to revisit and revise CSRF, Server-Side Path Traversal, and WebSocket Vulnerabilities for a deeper understanding.
+
 ## Repository Structure
 - **`/labs`**: Contains individual markdown files for each lab with:
   - A brief description of the vulnerability.
@@ -31,7 +33,8 @@ This repository contains detailed solutions for the following labs:
 - **`README.md`**: This file, providing an overview of the repository.
 
 ## Tools Used
-- [Burp Suite Community Edition](https://portswigger.net/burp/community): For testing and exploitation.
+- [Burp Suite](https://portswigger.net/burp/community): For testing and exploitation.
+- [OWASP](https://owasp.org): A resource hub for web security best practices.
 - [TryHackMe](https://tryhackme.com): To supplement the learning process.
 - [Wireshark](https://www.wireshark.org/): For network analysis.
 - [Python](https://www.python.org/): For scripting and automation.
@@ -47,8 +50,7 @@ A huge thanks to [PortSwigger Web Security Academy](https://portswigger.net/web-
 
 ## Connect with Me
 Feel free to connect with me on:
-- [Twitter](https://twitter.com/Habscodes)
-- [LinkedIn](https://linkedin.com/in/Habscodes)
+- [Twitter](https://x.com/LanZeroth)
+- [LinkedIn](https://www.linkedin.com/in/hablospacey-ng-9b4675ac/)
 
 Happy hacking! 🚀
-
