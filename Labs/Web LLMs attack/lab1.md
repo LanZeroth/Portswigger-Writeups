@@ -90,5 +90,8 @@ By exploiting excessive agency in the LLM, an attacker can cause significant har
 
 ![Exploiting LLM APIs with Excessive Agency 2](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/csrf-lab18b.PNG) 
 
+
+![Exploiting LLM APIs with Excessive Agency 2](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/csrf-lab18c.PNG) 
+
 **References**
 - [PortSwigger Web Security Academy](https://portswigger.net/web-security)
