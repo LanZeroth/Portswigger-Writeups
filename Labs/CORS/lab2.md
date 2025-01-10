@@ -75,5 +75,5 @@ API Key Decoded
 
 ![Basic Origin Reflection Attack Lab 2](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/cors-lab2b.PNG)
 
-My Final POC
+Old POC
 ![Basic Origin Reflection Attack Lab 2](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/cors-lab2c.PNG)
