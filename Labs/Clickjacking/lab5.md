@@ -103,4 +103,4 @@ Key Lessons:
 1️⃣ Use robust headers like X-Frame-Options and Content-Security-Policy to secure web applications.
 2️⃣ Ensure sensitive actions are accompanied by strong user intent verification.
 
-![Clickjacking with Multi-Step User Interaction](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/csrf-lab16a.PNG) 
+![Clickjacking with Multi-Step User Interaction](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/clickjack-lab5a.PNG) 
