@@ -68,4 +68,4 @@ You can execute other commands to gather more information:
 Unfortunately, access to the `/etc/shadow` file could not be obtained because `sudo` permissions were restricted to the root user only.
 
 
-![File Upload Remote Code Execution via Web Shell Upload Lab2](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/file-lab2a.png)
+![File Upload Remote Code Execution via Web Shell Upload Lab2](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/file-lab2a.PNG)
