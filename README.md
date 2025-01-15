@@ -1,35 +1,29 @@
-# Portswigger-Writeups for Documentation purposes
+# Portswigger-Writeups for Documentation Purposes
 
 Welcome to my repository for documenting my progress in completing PortSwigger Web Security Academy Labs. This repository includes step-by-step solutions, tips, and insights gained during my learning journey through the labs. It is intended to help me track my progress and share knowledge with others interested in web security.
 
 ## Overview
-The PortSwigger Web Security Academy provides hands-on labs to learn about web application vulnerabilities and how to exploit them. Each lab targets specific vulnerabilities, such as SQL Injection, Cross-Site Scripting (XSS), and more advanced techniques like Server-Side Parameter Pollution (SSPP) and Mass Assignment.
+The PortSwigger Web Security Academy provides hands-on labs to learn about web application vulnerabilities and how to exploit them. Each lab targets specific vulnerabilities, such as SQL Injection, Cross-Site Scripting (XSS), and advanced techniques like Server-Side Parameter Pollution (SSPP) and Mass Assignment.
 
 ## Labs Covered
-This repository contains detailed solutions for the following labs:
+This repository contains detailed solutions for the following topics:
 
-### Beginner Level
-- [ ] SQL Injection
-- [ ] Cross-Site Scripting (XSS)
-- [ ] Command Injection
+### Labs Directory
 
-### Practitioner Level
-- [x] Exploiting Mass Assignment
-- [ ] Testing for Server-Side Parameter Pollution (SSPP)
-- [ ] Finding Unused API Endpoints
-
-### Expert Level (Work in Progress)
-- [ ] Advanced Exploitation Techniques
-
-I plan to revisit and revise CSRF, Server-Side Path Traversal, and WebSocket Vulnerabilities for a deeper understanding.
+- [x]**API Testing**: Includes detailed steps for testing API vulnerabilities, identifying supported HTTP methods, and exploiting them.
+- [x]**CORS (Cross-Origin Resource Sharing)**: Covers labs on misconfigured CORS policies and exploiting insecure implementations.
+- [x]**CSRF (Cross-Site Request Forgery)**: Explains techniques to forge requests on behalf of authenticated users and preventive measures.
+- [x]**Clickjacking**: Documents labs on embedding pages in iframes to trick users into performing unintended actions.
+- [x]**File-upload Vulnerabilities**: Highlights ways to exploit improperly secured file upload features and preventive methods.
+- [x]**Web LLMs Attack**: Explores labs on indirect prompt injections and vulnerabilities specific to web-based large language models.
 
 ## Repository Structure
-- **`/labs`**: Contains individual markdown files for each lab with:
+- **`/Labs`**: Contains individual markdown files for each topic, including:
   - A brief description of the vulnerability.
   - Steps to identify and exploit it.
   - Preventive measures.
   - Example payloads and screenshots.
-- **`/resources`**: Additional resources like cheat sheets and references.
+- **`/Resources`**: Additional resources like cheat sheets and references.
 - **`README.md`**: This file, providing an overview of the repository.
 
 ## Tools Used
