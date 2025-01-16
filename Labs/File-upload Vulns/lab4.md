@@ -1,5 +1,3 @@
-![alt text](https://i.imgur.com/gaAWsGa.png)
-
 # File Upload Web Shell Upload via Extension Blacklist Bypass
 
 ## Objective
