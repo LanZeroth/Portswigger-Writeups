@@ -1,7 +1,7 @@
 # Lab: Web Shell Upload via Path Traversal
 
 **Category:** PRACTITIONER  
-**Status:** Not solved  
+**Status:** Solved 
 
 This lab contains a vulnerable image upload function. Although the server is configured to prevent execution of user-supplied files, this restriction can be bypassed by exploiting a secondary vulnerability.
 
