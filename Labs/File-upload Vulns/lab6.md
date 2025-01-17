@@ -46,7 +46,7 @@ This lab demonstrates how to exploit a vulnerable file upload functionality by c
 - Used Burp Suite's search feature to locate the `START` and `END` markers in the response.
 - Found Carlos's secret string between these markers. Example:
   ```
-START 42uXE0jNpsKYwWmYq32Py1pz4D3BNpSC END
+  START 42uXE0jNpsKYwWmYq32Py1pz4D3BNpSC END
   ```
 
 ### 7. **Submitting the Secret**
