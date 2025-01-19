@@ -53,6 +53,7 @@ Coupon already applied
 To exploit the race condition, we crafted multiple POST requests applying the coupon **PROMO20** and sent them in parallel. By doing so, we bypassed the application's logic that prevents applying the same coupon multiple times.
 
 ### Tools Used
+- **Burp Suite (2023.9 or higher)**: uses HTTP/2 to send parallel requests.
 - **Burp Suite (Community Edition)**: Intruder module was used to send parallel requests.
 - **Turbo Intruder**: For high-speed request fuzzing and testing race conditions.
 
