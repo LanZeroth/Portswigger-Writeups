@@ -140,4 +140,17 @@ If you're able to execute these commands, you can move on to **privilege escalat
 - **Linux:** `sudo -l`, `id`, `cat /etc/shadow`
 - **Windows:** `whoami /priv`, `net user`, `systeminfo`  
 
+![Server-Side Vulnerabilities- OS Command Injection Lab1](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/os.PNG)
+
+
+![Server-Side Vulnerabilities- OS Command Injection Lab1](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/os2.PNG)
+
+
+![Server-Side Vulnerabilities- OS Command Injection Lab1](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/os3.PNG)
+
+
+![Server-Side Vulnerabilities- OS Command Injection Lab1](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/os4.PNG)
+
+
+![Server-Side Vulnerabilities- OS Command Injection Lab1](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/os5.PNG)
 Let me know if you want to test deeper privilege escalation techniques! 🚀
