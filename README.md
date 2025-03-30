@@ -9,13 +9,18 @@ The PortSwigger Web Security Academy provides hands-on labs to learn about web a
 This repository contains detailed solutions for the following topics:
 
 ### Labs Directory
+Here's the revised list with **OS Command Injection** and **SQL Injection** added:  
 
-- [x] **API Testing**: Includes detailed steps for testing API vulnerabilities, identifying supported HTTP methods, and exploiting them.
-- [x] **CORS (Cross-Origin Resource Sharing)**: Covers labs on misconfigured CORS policies and exploiting insecure implementations.
-- [x] **CSRF (Cross-Site Request Forgery)**: Explains techniques to forge requests on behalf of authenticated users and preventive measures.
-- [x] **Clickjacking**: Documents labs on embedding pages in iframes to trick users into performing unintended actions.
-- [x] **File-upload Vulnerabilities**: Highlights ways to exploit improperly secured file upload features and preventive methods.
-- [x] **Web LLMs Attack**: Explores labs on indirect prompt injections and vulnerabilities specific to web-based large language models.
+- [x] **API Testing**: Includes detailed steps for testing API vulnerabilities, identifying supported HTTP methods, and exploiting them.  
+- [x] **CORS (Cross-Origin Resource Sharing)**: Covers labs on misconfigured CORS policies and exploiting insecure implementations.  
+- [x] **CSRF (Cross-Site Request Forgery)**: Explains techniques to forge requests on behalf of authenticated users and preventive measures.  
+- [x] **Clickjacking**: Documents labs on embedding pages in iframes to trick users into performing unintended actions.  
+- [x] **File-upload Vulnerabilities**: Highlights ways to exploit improperly secured file upload features and preventive methods.  
+- [x] **Web LLMs Attack**: Explores labs on indirect prompt injections and vulnerabilities specific to web-based large language models.  
+- [x] **OS Command Injection**: Covers exploiting insecure input handling to execute arbitrary system commands.  
+- [x] **SQL Injection**: Explores exploiting improperly sanitized SQL queries to gain unauthorized access or manipulate databases.  
+
+Let me know if this looks good or if you want to add more! 🚀
 
 ## Repository Structure
 - **`/Labs`**: Contains individual markdown files for each topic, including:
