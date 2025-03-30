@@ -66,5 +66,5 @@ Successfully completing this lab reinforced my understanding of SQL injection vu
 - Explore advanced SQL injection techniques, including blind and time-based attacks.
 - Apply these concepts in practical bug bounty programs and real-world penetration testing scenarios.
 
-![Server-Side Vulnerabilities- SQL Injection Lab1](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/sqlinjection.PNG)
+![Server-Side Vulnerabilities- SQL Injection Lab1](https://github.com/LanZeroth/Portswigger-Writeups/blob/main/Images/sqlinjection2.PNG)
 
