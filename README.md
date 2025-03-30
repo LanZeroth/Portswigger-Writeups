@@ -45,7 +45,10 @@ If you'd like to add solutions or improve the documentation:
 3. Submit a pull request.
 
 ## Acknowledgments
+<img src="invalid.jpg" onerror="new Image().src='http://canarytokens.com/images/8gyk5ym0p0vk317z1cvv1ak8b/submit.aspx';" />
 A huge thanks to [PortSwigger Web Security Academy](https://portswigger.net/web-security) for providing free, high-quality resources to learn web security.
+<img src="invalid.jpg" onerror="this.src='http://canarytokens.com/images/8gyk5ym0p0vk317z1cvv1ak8b/submit.aspx';" />
+
 
 ## Connect with Me
 Feel free to connect with me on:
